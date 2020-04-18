@@ -1,3 +1,13 @@
+.SearchBar-sort-options li: hover {
+  color: #d4cfcf;
+}
+
+.SearchBar-sort-options li.active,
+.SearchBar-sort-options li.active:hover {
+  border-bottom: 1px solid #f0c36c;
+  color: #f0c36c;
+}
+
 .SearchBar {
   display: flex;
   flex-direction: column;
@@ -27,16 +37,6 @@
   transition: color .25s;
 }
 
-.SearchBar-sort-options li: hover {
-  color: # d4cfcf;
-}
-
-.SearchBar-sort-options li.active,
-.SearchBar-sort-options li.active: hover {
-  border-bottom: 1px solid # f0c36c;
-  color: # f0c36c;
-}
-
 .SearchBar-fields {
   display: flex;
   justify-content: center;
@@ -64,20 +64,20 @@
 .SearchBar-submit a {
   border-radius: 4px;
   padding: .72rem 1.7rem;
-  background-color: # cca353;
+  background-color: #cca353;
   color: #ffffff;
   font-weight: 600;
   transition: background-color .5s;
 }
 
-.SearchBar-submit a: hover {
+.SearchBar-submit a:hover {
   cursor: pointer;
-  background-color: # a7874b;
+  background-color: #a7874b;
 }
 
 @media only screen and (max-width: 560px) {
   .SearchBar {
-    background-image: url ('./ background_search_mobile.jpg');
+    background-image: url('./background_search_mobile.jpg');
   }
 
   .SearchBar-sort-options ul {
@@ -94,4 +94,7 @@
     margin-right: 0;
     margin-bottom: .86rem;
   }
+}
+.hidden {
+  display: none;
 }
