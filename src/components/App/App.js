@@ -18,10 +18,6 @@ class App extends React.Component {
       this.setState({
         businesses: businesses
       });
-    }, reason => {
-      this.setState({
-        businesses: []
-      });
     });
   }
 
